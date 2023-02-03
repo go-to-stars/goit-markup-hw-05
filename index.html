@@ -72,7 +72,9 @@
       <section class="hero">
         <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button btn" type="button">Order Service</button>
+          <button class="hero-button btn" type="button" data-modal-open
+            >Order Service</button
+          >
         </div>
       </section>
       <!-- /hero section   -->
@@ -503,7 +505,7 @@
         </div>
         <div class="footer-social">
           <h2 class="footer-social-subtitle">Social media</h2>
-          <ul class="footer-social-list">
+          <ul class="footer-social-list list">
             <li class="footer-social-item">
               <a
                 href=""
@@ -553,5 +555,22 @@
       </div>
     </footer>
     <!-- /site footer section -->
+
+    <!-- modal window -->
+    <div class="modal-backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button
+          class="modal-window-close-button"
+          type="button"
+          data-modal-close
+        >
+          <svg class="modal-window-close-button-icon" width="8" height="8">
+            <use href="images/icons/icons.svg#close-button"></use>
+          </svg> </button
+      ></div>
+    </div>
+    <!-- /modal window -->
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
